@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { RouterLink } from "@angular/router";
 
 @Component({
-  selector: 'app-landing',
+  selector: 'app-sigle-post',
   imports: [RouterLink],
-  templateUrl: './landing-page.html',
-  styleUrl: './landing-page.css',
+  templateUrl: './sigle-post.html',
+  styleUrl: './sigle-post.css',
 })
-export class LandingComponent {
+export class SiglePostComponent {
 
 }

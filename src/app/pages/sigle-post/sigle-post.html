@@ -1,0 +1,125 @@
+<div class="min-h-screen bg-slate-50 text-slate-900 font-sans pb-20">
+  
+  <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200/60 px-4 py-4">
+    <div class="max-w-3xl mx-auto flex justify-between items-center">
+      
+      <button [routerLink]="['/feed']" class="p-2.5 bg-slate-100/50 hover:bg-slate-100 rounded-full text-slate-700 transition-colors flex items-center gap-2 active:scale-95">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+        </svg>
+        <span class="text-sm font-bold pr-1 hidden md:block">Volver</span>
+      </button>
+
+      <h1 class="text-lg font-bold tracking-tight text-slate-900">DailySnap.</h1>
+      
+      <button class="p-2.5 hover:bg-slate-100 rounded-full text-slate-700 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM17.25 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <main class="max-w-3xl mx-auto mt-6 px-4 md:px-0">
+    
+    <article class="bg-white p-4 md:p-6 rounded-[3rem] shadow-sm border border-slate-100 space-y-6">
+      
+      <header class="flex items-center justify-between px-2">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 md:w-14 md:h-14 bg-slate-800 rounded-2xl border-2 border-white shadow-sm overflow-hidden">
+            <img src="/Mari.png" class="w-full h-full object-cover" alt="Avatar">
+          </div>
+          <div>
+            <h2 class="text-lg font-black tracking-tight">@mari_7</h2>
+            <div class="flex items-center gap-2 text-xs text-slate-400 font-medium uppercase tracking-wider">
+              <p>Hoy, 18:45</p>
+              <span>•</span>
+              <p>Madrid, ES</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="relative w-full aspect-[4/5] bg-slate-100 rounded-[2.5rem] overflow-hidden shadow-sm border border-slate-100">
+        <img src="nikita.JPG" class="w-full h-full object-cover" alt="Main Post Image">
+        
+        <div class="absolute top-4 left-4 w-28 h-36 md:w-32 md:h-44 bg-slate-200 rounded-2xl border-4 border-white shadow-2xl overflow-hidden ring-1 ring-slate-900/5">
+          <img src="Mari.png" class="w-full h-full object-cover filter contrast-110" alt="Selfie Reaction">
+        </div>
+      </div>
+
+      <div class="px-2">
+        <div class="flex justify-between items-center px-6 py-4 bg-slate-50 rounded-3xl border border-slate-100">
+          <svg class="w-8 h-8 text-slate-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/><path d="M8 13L10 13"/><path d="M14 13L16 13"/><path d="M12 17C12 17 11 16 10 16C9 16 8 17 8 17"/><path d="M16 17C16 17 15 16 14 16C13 16 12 17 12 17"/><path d="M8 9L7 10"/><path d="M16 9L17 10"/></svg>
+          <svg class="w-8 h-8 text-slate-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/><path d="M8 12C8 12 9 11 10 11C11 11 12 12 12 12"/><path d="M16 12C16 12 15 11 14 11C13 11 12 12 12 12"/><path d="M15 16C15 16 14 17 12 17C10 17 9 16 9 16"/><path d="M17 6L17.5 7C17.5 7 18.5 7.5 18.5 8.5C18.5 9.5 17.5 10 17.5 10"/></svg>
+          <svg class="w-8 h-8 text-slate-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/><path d="M8 11L10 11"/><path d="M14 11L16 11"/><path d="M9 16L15 16"/></svg>
+          <svg class="w-8 h-8 text-slate-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/><path d="M8 10C8 10 8.5 11 10 11C11.5 11 12 10 12 10"/><path d="M12 10C12 10 12.5 11 14 11C15.5 11 16 10 16 10"/><path d="M9 15C9 15 10 16.5 12 16.5C14 16.5 15 15 15 15"/></svg>
+          
+          <div class="relative transform scale-110">
+              <div class="absolute inset-0 bg-white rounded-full shadow-[0_4px_10px_-2px_rgba(16,185,129,0.3)] ring-4 ring-emerald-50"></div>
+              <svg class="w-9 h-9 text-emerald-500 relative z-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/><path d="M8 12L10 10"/><path d="M8 10L10 12"/><path d="M14 12L16 10"/><path d="M14 10L16 12"/><path d="M8 15C8 15 9.5 18 12 18C14.5 18 16 15 16 15"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="px-4">
+        <p class="text-slate-700 leading-relaxed text-lg">
+          <span class="font-black text-slate-900 mr-1">@mari_7</span>
+          Dando una vuelta con nikita
+        </p>
+      </div>
+
+      <hr class="border-slate-100 mx-4 my-6">
+
+      <section class="px-4 space-y-6">
+        <h3 class="font-black text-lg">Comentarios (3)</h3>
+        
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="w-10 h-10 bg-indigo-100 rounded-2xl overflow-hidden flex-shrink-0">
+                 <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="Avatar">
+            </div>
+            <div class="space-y-1">
+              <div class="flex items-center gap-2">
+                <p class="font-bold text-sm">@ana_banana</p>
+                <span class="text-slate-300">•</span>
+                <p class="text-xs font-bold text-slate-400 uppercase">Hace 10m</p>
+              </div>
+              <p class="text-slate-700 leading-snug"> Que foton😍</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+             <div class="w-10 h-10 bg-rose-100 rounded-2xl overflow-hidden flex-shrink-0">
+                 <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Aneka" alt="Avatar">
+            </div>
+            <div class="space-y-1">
+              <div class="flex items-center gap-2">
+                <p class="font-bold text-sm">@carlos_fit</p>
+                <span class="text-slate-300">•</span>
+                <p class="text-xs font-bold text-slate-400 uppercase">Hace 35m</p>
+              </div>
+              <p class="text-slate-700 leading-snug">Que carita🔥</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sticky bottom-4 mt-8">
+            <div class="relative flex items-center">
+                <div class="w-10 h-10 bg-slate-800 rounded-2xl border-2 border-white shadow-sm overflow-hidden absolute left-2 flex-shrink-0 z-10">
+                    <img src="/Mari.png" class="w-full h-full object-cover" alt="Tu Avatar">
+                </div>
+                <input type="text" placeholder="Añade un comentario..." class="w-full pl-14 pr-12 py-4 bg-slate-50 border border-slate-200 rounded-[2rem] focus:outline-none focus:ring-2 focus:ring-slate-900/10 focus:border-slate-300 transition-all shadow-sm text-sm font-medium placeholder:text-slate-400">
+                <button class="absolute right-3 p-2 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition-colors">
+                    <svg xmlns="/nikita.JPG" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                      <path d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+      </section>
+    </article>
+
+  </main>
+</div>
